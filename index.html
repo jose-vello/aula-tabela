@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        th,
+        td {
+            border: 1px solid black
+        }
+        tfoot{background-color: cyan;}
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <!--tr table row uma linha da tabela-->
+            <tr>
+                <!--th é cada coluna-->
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>preço</th>
+                <th>Black friday</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <!--td table data-->
+                <td>Produto 1</td>
+                <td>2</td>
+                <td>R$ 5,00</td>
+                <td rowspan="2">Sim</td>
+            </tr>
+            <tr>
+                <td>Produto 2</td>
+                <td>5</td>
+                <td>R$ 10,00</td>
+                
+            </tr>
+            <tr>
+                <td>Produto 3</td>
+                <td>3</td>
+                <td>R$ 15,00</td>
+                <td>Não</td>
+            </tr>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td>R$ 30</td>
+                </tr>
+            </tfoot>
+            
+            
+            <!--colspan ocupa mais colunas ex: <td colspan="2">Produto 1</td> ocupa 2 colunas, até o limite das colunas --->
+            <!--rowspan ocupa mais linhas ex: <td rowspan="2">Produto 1</td> ocupa 2 linhas-->
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
